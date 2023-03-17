@@ -6,8 +6,8 @@ Vagrant.configure("2") do |config|
     master.vm.network "private_network",ip: "10.168.9.3"
     master.vm.hostname = "master"
       master.vm.provider "virtualbox" do |v|
-        v.memory = 2024
-        v.cpus = 2
+        v.memory = 1024
+        v.cpus = 1
      end
   end
 
