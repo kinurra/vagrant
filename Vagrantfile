@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define "node2" do |node2|
-    node1.vm.hostname = "node2"
+    node2.vm.hostname = "node2"
     node2.vm.box = "ubuntu/jammy64"
     node2.vm.network "private_network",ip: "10.168.9.4"
   end
